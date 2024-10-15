@@ -10,26 +10,26 @@
     --max-width: 1200px;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.section__container{
+.section__container {
     max-width: var(--max-width);
     margin: auto;
     padding: 5rem 1rem;
 }
 
-.section__header{
+.section__header {
     font-size: 3rem;
     font-weight: 700;
     line-height: 4rem;
     color: var(--text-dark);
 }
 
-.section__subheader{
+.section__subheader {
     margin-bottom: 0.5rem;
     font-size: 1rem;
     font-weight: 500;
@@ -37,12 +37,12 @@
     letter-spacing: 2px;
 }
 
-.section__description{
+.section__description {
     line-height: 1.75rem;
     color: var(--text-light);
 }
 
-.btn{
+.btn {
     padding: 1rem 2rem;
     outline: none;
     border: none;
@@ -55,55 +55,54 @@
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: var(--primary-color-dark);
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-img{
+img {
     display: flex;
     width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
     transition: 0.3s;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
 html,
-body{
+body {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
 
-header{
-    background: linear-gradient(
-        to bottom,
-        rgba(245,71,72,0.1),
-        rgba(245,71,72,0),
-    );
+header {
+    background: linear-gradient(to bottom,
+            rgba(245, 71, 72, 0.1),
+            rgba(245, 71, 72, 0),
+        );
 }
 
-nav{
+nav {
     position: fixed;
     isolation: isolate;
     width: 100%;
     z-index: 9;
 }
 
-.nav__header{
+.nav__header {
     padding: 1rem;
     width: 100%;
     display: flex;
@@ -112,21 +111,21 @@ nav{
     background-color: var(--primary-color);
 }
 
-.nav__logo img{
+.nav__logo img {
     max-width: 35px;
 }
 
-.nav__logo span{
+.nav__logo span {
     display: none;
 }
 
-.nav__menu__btn{
+.nav__menu__btn {
     font-size: 1.5rem;
     color: var(--white);
     cursor: pointer;
 }
 
-.nav__links{
+.nav__links {
     position: absolute;
     top: 100%;
     left: 0;
@@ -143,40 +142,40 @@ nav{
     transform: translateY(-100%);
 }
 
-.nav__links.open{
+.nav__links.open {
     transform: translateY(0);
 }
 
-.nav__links a{
+.nav__links a {
     font-weight: 500;
     color: var(--white);
     white-space: nowrap;
 }
 
-.nav__links a:hover{
+.nav__links a:hover {
     color: var(--text-dark);
 }
 
-.nav__links .btn:hover{
+.nav__links .btn:hover {
     background-color: var(--primary-color);
 }
 
-.nav__btns{
+.nav__btns {
     display: none;
 }
 
-.header__container{
+.header__container {
     display: grid;
     gap: 2rem 1rem;
     overflow: hidden;
 }
 
-.header__image img{
+.header__image img {
     max-width: 575px;
     margin-inline: auto;
 }
 
-.header__tag{
+.header__tag {
     margin-bottom: 2rem;
     max-width: fit-content;
     margin-inline: auto;
@@ -185,15 +184,15 @@ nav{
     align-items: center;
     gap: 1rem;
     color: var(--primary-color);
-    background-color: rgba(245,71,72,0.1);
+    background-color: rgba(245, 71, 72, 0.1);
     border-radius: 5rem;
 }
 
-.header__tag img{
+.header__tag img {
     max-width: 25px;
 }
 
-.header__content h1{
+.header__content h1 {
     margin-bottom: 2rem;
     font-size: 4.75rem;
     color: var(--text-dark);
@@ -201,30 +200,30 @@ nav{
     line-height: 5.75rem;
 }
 
-.header__content h1 span{
+.header__content h1 span {
     color: var(--primary-color);
 }
 
-.header__content .section__description{
+.header__content .section__description {
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.header__btns{
+.header__btns {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
 }
 
-.header__btns a{
+.header__btns a {
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--text-dark);
 }
 
-.header__btns a span{
+.header__btns a span {
     padding: 4px 10px;
     font-size: 1.5rem;
     color: #fdc55e;
@@ -232,12 +231,56 @@ nav{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-.header__btns a:hover{
+.header__btns a:hover {
     color: var(--primary-color);
 }
 
+.service__container .section__subheader {
+    text-align: center;
+}
+
+.service__container .section__header {
+    margin-bottom: 4rem;
+    max-width: 600px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.service__grid {
+    display: grid;
+    gap: 2rem 1rem;
+}
+
+.service__card img {
+    max-width: 175px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+.service__card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+}
+
+.service__card p {
+    max-width: 275px;
+    margin-inline: auto;
+    color: var(--text-light);
+    text-align: center;
+    line-height: 1.75rem;
+}
+
+@media (width > 540px) {
+    .service__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (width > 768px) {
-    nav{
+    nav {
         position: static;
         padding-block: 2rem 0;
         padding-inline: 1rem;
@@ -249,28 +292,28 @@ nav{
         gap: 2rem;
     }
 
-    .nav__header{
+    .nav__header {
         flex: 1;
         padding: 0;
         background-color: transparent;
     }
 
-    .nav__logo img{
+    .nav__logo img {
         max-width: 40px;
     }
 
-    .nav__logo span{
+    .nav__logo span {
         display: flex;
         font-size: 1.5rem;
         font-weight: 600;
         color: var(--text-dark);
     }
 
-    .nav__menu__btn{
+    .nav__menu__btn {
         display: none;
     }
 
-    .nav__links{
+    .nav__links {
         position: static;
         width: fit-content;
         padding: 0;
@@ -280,42 +323,46 @@ nav{
         transform: none;
     }
 
-    .nav__links a{
+    .nav__links a {
         color: var(--text-dark);
     }
 
-    .nav__links a:hover{
+    .nav__links a:hover {
         color: var(--primary-color);
     }
 
-    .nav__links li:last-child{
+    .nav__links li:last-child {
         display: none;
     }
 
-    .nav__btns{
+    .nav__btns {
         flex: 1;
         display: flex;
         justify-content: flex-end;
     }
 
-    .header__container{
+    .header__container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
 
-    .header__image{
+    .header__image {
         grid-area: 1/2/2/3;
     }
 
-    .header__tag{
+    .header__tag {
         margin-inline-start: unset;
     }
 
-    .header__content :is(h1, .section__description){
+    .header__content :is(h1, .section__description) {
         text-align: left;
     }
 
-    .header__btns{
+    .header__btns {
         justify-content: flex-start;
+    }
+
+    .service__grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
