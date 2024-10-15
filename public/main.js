@@ -54,3 +54,33 @@ const swiper = new Swiper(".swiper", {
     slidesPerView:"auto",
     spaceBetween: 30,
 }); 
+
+ScrollReveal().reveal(".client__image img", {
+    ...scrollRevealOption,
+    origin: "left",
+});
+
+ScrollReveal().reveal(".client__content .section__subheader", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".client__content .section__header", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+ScrollReveal().reveal(".client__content .section__description", {
+    ...scrollRevealOption,
+    delay: 1500,
+});
+
+ScrollReveal().reveal(".client__details", {
+    ...scrollRevealOption,
+    delay: 2000,
+});
+
+ScrollReveal().reveal(".client__rating", {
+    ...scrollRevealOption,
+    delay: 2500,
+});
